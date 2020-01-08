@@ -1,4 +1,4 @@
-# Full-Stack Starter
+# Eco Foodie
 
 This repository contains a "starter" project for web application development in JavaScript.
 
