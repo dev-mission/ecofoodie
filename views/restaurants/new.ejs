@@ -1,0 +1,19 @@
+<%- contentFor('title') %>Chipotle
+<%- contentFor('body') %>
+<h1>Add new Restaurant</h1>
+
+
+<form method="post" action="/restaurant">
+    <label for="name">Name</label></br>
+    <input type="text" id="name" name="name" required></br>
+    <label for="address">Address</label></br>
+    <input type="text" id="address" name="address" required></br>
+    <label for="longtitude">Longtitude</label></br>
+    <input type="text" id="longtitude" name="longtitude" required></br>
+    <label for="latitude">Latitude</label></br>
+    <input type="text" id="latitude" name="latitude" required></br>
+    <label for="rating">Rating</label></br>
+    <input type="text" id="rating" name="rating"></br>
+    
+    <button type="submit">Submit</button>
+</form>
