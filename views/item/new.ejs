@@ -1,0 +1,16 @@
+<%- contentFor('title') %> EcoFoodie
+<%- contentFor('body') %>
+<h1>New Items</h1>
+<form method="post" action="/new">
+    <label for="title">Restaurant:</label></br>
+    <input type="text" id="title" name="title" required></br>
+    <label for="body">Picture:</label></br>
+   
+    <select id="bins">
+        <option value="compost">Compost</option>
+        <option value="">Recycle</option>
+        <option value="mercedes">Trash</option>
+    </select>
+
+    <button type="submit">Submit</button></form></br>
+</form>
