@@ -5,21 +5,23 @@ const router = express.Router();
 const models = require('../models');
 
 router.get('/', function(req, res, next) {
-    // models.Item.findAll().then(function(records) {
-      res.render('item/item', {
-        // records: records
-      // });
-    });
+    models.Item.findAll().then(function(records) {
+    res.render('item/item', {
+        records: records
+      });
   });
+});
 
   router.get('/new', function(req, res, next) {
     res.render('item/new');
 });
 
-router.post('/item', function(req, res, next) { 
-  models.Items.create({
-    bin: req.body.title,
-    restaurantId: req.body.body
+router.post('/', function(req, res, next) { 
+  models.Item.create({
+    bin: req.body.bin,
+    restaurantId: req.body.restaurantId,
+    categoryId: req.body.categoryId,
+    photo: req.body.photo,
   }).then(function(record) {
     res.redirect(`/item`);
   });
@@ -28,7 +30,7 @@ router.post('/item', function(req, res, next) {
 
 router.get('/:id', function(req, res, next) {
     models.Todo.findByPk(req.params.id).then(function(record) {
-      res.render('todo/edit', {
+      res.render('/item', {
         record: record
       });
   });
