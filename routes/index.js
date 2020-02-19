@@ -15,6 +15,17 @@ router.get('/logout', function(request,response,next){
   request.redirect('/');
 });
 
+router.get('/posts' , function(req, res, next){    
+  models.Post.findByPk(req.query.id).then(function(record){
+  res.render('post', {record:record})
+
+      });
+});
+
+
+/////////////
+
+
 //router.get('/list_restaurants', function(request, response, next ){
 
 

@@ -1,0 +1,19 @@
+<%- contentFor('title') %>TODOs
+<%- contentFor('body') %>
+
+
+
+<form method="post" action="/restaurants">
+    <label for="name">Name</label></br>
+    <input type="text" id="name" value= "<%= record.name %>" name= "name" required></br>
+    <label for="address">Address</label></br>
+    <input type="text" id="address" value="<%= record.address %>" name= "address" required></br>
+    <label for="longtitude">Longtitude</label></br>
+    <input type="text" id="longtitude" value="<%= record.longtitude %>" name= "longtitude" required></br>
+    <label for="latitude">Latitude</label></br>
+    <input type="text" id="latitude" value = "<% record.latitude %>" name= "latitude" required></br>
+    <label for="rating">Rating</label></br>
+    <input type="text" id="rating" value = "<% record.rating %>" name="rating"></br>
+    
+    <button type="submit">Submit</button>
+</form>

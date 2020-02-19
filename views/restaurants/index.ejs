@@ -1,14 +1,14 @@
 <%- contentFor('title') %>TODOs
 <%- contentFor('body') %>
-<h1>TODOs Page</h1>
+<h1>EcoFoodie</h1>
 
 
 
-     <p><a href="/restaurants/new">New Restaurants</a></p>
+                <p><a href="/restaurants/new">New Restaurants</a></p>
 
 
-<% for(let record of records) {%>
-        <li><a href="/todo/<%= record.id %>"><%= record.from %> :-) <%=record.title%></a><br></li>
-<% } %>
+        <% for(let record of records) {%>
+                <li><a href="/restaurants/<%= record.id %>"><%= record.name %> </a><br></li>  
+        <% } %>
 
-}
+
