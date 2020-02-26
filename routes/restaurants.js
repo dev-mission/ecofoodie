@@ -22,14 +22,9 @@ router.get('/', function(req, res, next) {
 
     });
 
-    router.get('/:id', function(req, res, next){
-        models.Restaurant.findByPk(req.params.id).then(function(record) {
-          res.render('restaurants/edit_restaurants', {
-            record: record
-          });
-        });
-      });
 
+
+    // Submitting for new restaurant
     router.post('/', function(req, res, next){
         models.Restaurant.create({
             name: req.body.name,
@@ -43,10 +38,10 @@ router.get('/', function(req, res, next) {
     });
 });
 
-    
+    // Only for viewing a restaurant edit
     router.get('/:id', function(req, res, next){
        models.Restaurant.findByPk(req.params.id).then(function(record){
-           res.render('restaurants/new',{
+           res.render('restaurants/edit',{
 
               record : record
            });    
