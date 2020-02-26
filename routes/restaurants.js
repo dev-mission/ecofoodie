@@ -48,6 +48,17 @@ router.get('/', function(req, res, next) {
        });
     });
 
+    // Only for viewing a restaurant and delete
+    router.get('/:id', function(req, res, next){
+        models.Restaurant.findByPk(req.params.id).then(function(record){
+            res.render('restaurants/delete',{
+ 
+               record : record
+            });    
+        });
+     });
+ 
+ 
 
     router.post('/:id', function(req, res, next){
         models.Restaurant.findByPk(req.params.id).then(function(record){
