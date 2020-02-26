@@ -29,13 +29,25 @@ router.post('/', function(req, res, next) {
 });
 
 router.get('/:id', function(req, res, next) {
-    models.Todo.findByPk(req.params.id).then(function(record) {
-      res.render('/item', {
+    models.Item.findByPk(req.params.id).then(function(record) {
+      res.render('item/edit', {
         record: record
       });
   });
 });
 
-  
+  router.post('/:id', function(req, res, next) {
+  models.Item.findByPk(req.params.id).then(function(record) {
+    record.update({
+      bin: req.body.bin,
+      restaurantId: req.body.restaurantId,
+      categoryId: req.body.categoryId,
+      photo: req.body.photo,
+    }).then(function(record) {
+      res.redirect('/item');
+    })
+  })
+});
+
 
   module.exports = router;
