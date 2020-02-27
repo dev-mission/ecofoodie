@@ -12,10 +12,8 @@
         <% for(let record of records) { %>
                 <!-- <ul><a class="isDisabled" href="/restaurants/<%= record.id %>"><%= record.name %> </a><br></ul>   -->
                 <h5><%= record.name %> </h5>
-                <ul><a href="/restaurants/<%= record.id %>">Edit </a><br></ul> 
-                
-
-            
+                <ul><a href="/restaurants/<%= record.id %>">Edit </a></ul>
+                <ul><a href="/restaurants/<%= record.id %>">Delete</a></ul> 
         <% } %>
                   
 

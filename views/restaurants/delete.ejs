@@ -2,7 +2,7 @@
 <%- contentFor('body') %>
 
 
-<form method="post" action="/restaurants/<%= record.id %>">
+<form method="get" action="/restaurants/<%= record.id %>">
     
     <label for="name">Name</label></br>
     <input type="text" id="name"  name="name" value ="<%= record.name%>"  required></br>
