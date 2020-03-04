@@ -5,13 +5,13 @@
 <form method="post" action="/item">
 <div id="other" class="form-group" style="display: none;">
     <input type="text" class="form-control" name="other" value="" placeholder="Please describe...">
-    
+
   </div>
 
   <div class="form-group">
     <label>Restaurant</label>
     <textarea class="form-control" rows="2" name="restaurantId" ></textarea>
-    
+
   </div>
 
   <div class="form-group">
@@ -20,17 +20,33 @@
     <input type="hidden" name="pictureUrl" value="">
   </div>
 
-  <div class="form-group">
-    <label>Bin</label>
-    <input type="textarea" class="form-control" name="bin" value="" />
-    
-  </div>
 
-  <div class="form-group">
-    <label>Category</label>
-    <input type="number" class="form-control" name="categoryId" value="" />
-    
-  </div>
+    <label>Bin</label>
+    <br>
+  <form action="/action_page.php">
+  <input type="radio" id="Recyling" name="type" value="Recyling">
+  <label for="Recyling">Recyling</label><br>
+
+
+  <input type="radio" id="Compost" name="type" value="Compost">
+  <label for="Compost">Compost</label><br>
+
+  <input type="radio" id="Trash" name="type" value="Trash">
+  <label for="Trash">Trash</label>
+
+
+
+
+
+
+  <label>What is this photo about?</label>
+  <br>
+<label for="category">Choose a category:</label>
+<select id="category">
+  <option value="Plastic">Plastic</option>
+  <option value="LandFill">LandFill</option>
+  <option value="Recycle">Recycle</option>
+</select>
 
   <div class="form-group">
     <button class="btn btn-primary btn-block" type="submit">Submit</button>
