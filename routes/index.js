@@ -7,8 +7,6 @@ const models = require('../models');
 
 router.get('/', function(req, res, next) {
   res.render('index');
-router.get('/', function(request, response, next) {
-  response.render('index');
 });
 
 router.get('/logout', function(request,response,next){
@@ -17,7 +15,7 @@ router.get('/logout', function(request,response,next){
   request.redirect('/');
 });
 
-router.get('/posts' , function(req, res, next){    
+router.get('/posts' , function(req, res, next){
   models.Post.findByPk(req.query.id).then(function(record){
   res.render('post', {record:record})
 
