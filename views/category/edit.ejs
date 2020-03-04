@@ -1,0 +1,16 @@
+<%- contentFor('title') %>View post
+<%- contentFor('body') %>
+
+<form method="post" action="/categories/<%= record.id %>">
+
+
+
+
+    <label for="type">Category</label>
+
+    <input type="text" value="<%= record.type %> " id="type" name="type">
+
+
+
+    <button type="submit">Submit</button>
+  </form>
