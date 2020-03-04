@@ -1,0 +1,49 @@
+<%- contentFor('title') %> EcoFoodie
+<%- contentFor('body') %>
+
+<h1>Edit Items</h1>
+
+<form method="post" action="/item/<%= record.id %>">
+  <div id="other" class="form-group" style="display: none;">
+    <input type="text" class="form-control" name="other" value="" placeholder="Please describe..." /> 
+
+    </div>
+
+    <!-- Restaurant -->
+    <div class="form-group">
+      <label>Restaurant</label>
+      <input class="form-control" rows="2" name="restaurantId" value=<%= record.id %> />
+
+    </div>
+
+    <!-- Picture -->
+    <div class="form-group">
+      <label>Picture</label>
+      <input type="file" class="form-control" name="photo" />
+      <input type="hidden" name="pictureUrl" value=<%= record.pictureUrl %> />
+    </div>
+
+    <!-- Bin -->
+    <div class="form-group">
+      <label>Bin</label>
+      <input type="textarea" class="form-control" name="bin" value=<%= record.bin %> />
+
+    </div>
+
+    <!-- Category -->
+    <div class="form-group">
+      <label>Category</label>
+      <input type="number" class="form-control" name="categoryId" value=<%= record.categoryId %> />
+
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-group">
+      <button class="btn btn-primary btn-block" type="submit">Submit</button>
+    </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
