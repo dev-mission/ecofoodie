@@ -1,0 +1,20 @@
+<%- contentFor('title') %>EcoFoodie
+<%- contentFor('body') %>
+<link rel="stylesheet" type="text/css" href="index.css">
+<h1>EcoFoodie</h1>
+
+
+
+                <p><a href="/restaurants/new">New Restaurants</a></p>
+                <p><a href="/">Back</a></p>
+
+
+        <% for(let record of records) { %>
+                <!-- <ul><a class="isDisabled" href="/restaurants/<%= record.id %>"><%= record.name %> </a><br></ul>   -->
+                <h5><%= record.name %> </h5>
+                <ul><a href="/restaurants/<%= record.id %>">Edit </a></ul>
+                <ul><a href="/restaurants/<%= record.id %>">Delete</a></ul> 
+        <% } %>
+                  
+
+

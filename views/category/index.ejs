@@ -1,0 +1,13 @@
+<%- contentFor('title') %>Category
+<%- contentFor('body') %>
+<h1>Category Page </h1>
+
+
+<p><a href="/categories/new">Category</a></p>
+<ul>
+<% for (let record of records) { %>
+  <li><a href="/categories/<%= record.id %>"><%= record.type %></a> </li>
+
+
+<%} %>
+</ul>
