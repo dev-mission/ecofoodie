@@ -1,6 +1,17 @@
 <%- contentFor('title') %> EcoFoodie
 <%- contentFor('body') %>
-<h1>New Items</h1>
+
+<head>
+<style>
+img {
+  width: 100%;
+}
+</style>
+</head>
+
+<img src="/images/greenArrow.png" alt="green arrow" style="width:128px;height:128px;">
+<img src="/images/EcoFoodieLOGO.png" alt="Eco Foodie Logo" style="width:128px;height:128px;">
+
 
 <form method="post" action="/item">
 <div id="other" class="form-group" style="display: none;">
@@ -15,7 +26,7 @@
   </div>
 
   <div class="form-group">
-    <label>Picture</label>
+    <label>Selected Photo</label>
     <input type="file" class="form-control" name="photo" />
     <input type="hidden" name="pictureUrl" value="">
   </div>
