@@ -64,6 +64,9 @@
   width: 0;
 }
 
+
+
+
 .radio-toolbar2 label {
     display: inline-block;
     background-color: white;
@@ -125,6 +128,7 @@
     border-radius: 4px;
     border-color: black;
 
+
 }
 
 .radio-toolbar3 label:hover {
@@ -163,28 +167,30 @@
 
 </style>
 <body>
+
 <div class="radio-toolbar">
     <input type="radio" id="radioApple" name="radioFruit" value="apple" checked>
-    <label for="radioApple">Recycling   <div class="left-img1"></div>
-</label>
-
+    <label for="radioApple">Recycling   <div class="left-img1"></div></label>
     <br>
     <br>
 </div>
+
 
 <div class="radio-toolbar2">
     <input type="radio" id="radioBanana" name="radioFruit" value="banana">
-    <label for="radioBanana">Compost <div class="left-img2"></label>
+    <label for="radioBanana">Compost <div class="left-img2"></div></label>
     <br>
     <br>
-</div>
+
 
 <div class="radio-toolbar3">
 
     <input type="radio" id="radioOrange" name="radioFruit" value="orange">
-    <label for="radioOrange">  Trash <div class="left-img3"> </label>
+    <label for="radioOrange">  Trash <div class="left-img3"> </div></label>
+    <br>
+    <br>
 
-</div>
+
 
 <p>&nbsp;</p>
 
