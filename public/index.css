@@ -1,3 +1,6 @@
-table table-dark{
-    size: 52px;
+.check{
+    color: orange;
+}
+.mousepointer{
+    cursor: pointer;
 }
