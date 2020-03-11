@@ -1,5 +1,6 @@
 <%- contentFor('title') %> EcoFoodie
 <%- contentFor('body') %>
+<link rel="stylesheet" type="text/css" href="itemNew.css">
 
 <head>
 <style>
@@ -45,16 +46,36 @@ img {
 
     <label>Bin</label>
     <br>
-  <form action="/action_page.php">
-  <input type="radio" id="Recyling" name="type" value="Recyling">
-  <label for="Recyling">Recyling</label><br>
+
+    <div class="radio-toolbar">
+        <input type="radio" id="radioApple" name="radioFruit" value="apple" checked>
+        <label for="radioApple">Recycling   <div class="left-img1"></div></label>
+        <br>
+        <br>
+    </div>
 
 
-  <input type="radio" id="Compost" name="type" value="Compost">
-  <label for="Compost">Compost</label><br>
+    <div class="radio-toolbar2">
+        <input type="radio" id="radioBanana" name="radioFruit" value="banana">
+        <label for="radioBanana">Compost <div class="left-img2"></div></label>
+        <br>
+        <br>
 
-  <input type="radio" id="Trash" name="type" value="Trash">
-  <label for="Trash">Trash</label>
+
+    <div class="radio-toolbar3">
+
+        <input type="radio" id="radioOrange" name="radioFruit" value="orange">
+        <label for="radioOrange">  Trash <div class="left-img3"> </div></label>
+        <br>
+        <br>
+
+
+
+    <p>&nbsp;</p>
+
+
+
+
   <br>
 
 

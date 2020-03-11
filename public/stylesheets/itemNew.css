@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<style>
-
 .radio-toolbar {
-  margin: 10px;
+  margin: 1px;
 }
 
 .radio-toolbar input[type="radio"] {
@@ -13,14 +9,27 @@
 }
 
 .radio-toolbar label {
-    display: inline-block;
+
     background-color: white;
     padding: 10px 20px;
-    font-family: sans-serif, Arial;
-    font-size: 16px;
-    border: 2px solid #444;
+    color: #2F80ED;
+    border: 2px solid #2F80ED;
     border-radius: 4px;
-    border-color: blue;
+    border-color: #2F80ED;
+    width: 50%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+
+
+
+
+
 
 }
 
@@ -41,12 +50,13 @@
 .left-img1 {
   min-width: 40px;
   height: 40px;
-  border: 1px solid #333;
+  border: 1px solid white;
   margin-right: 10px;
   margin-left: 10px;
-  background: url(https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?auto=format&fit=crop&w=311&q=80);
+  background: url(/images/recycle.png);
   background-size: cover;
   float: right;
+
 
 }
 
@@ -55,7 +65,7 @@
 
 
 .radio-toolbar2 {
-  margin: 10px;
+  margin: 1px;
 }
 
 .radio-toolbar2 input[type="radio"] {
@@ -71,11 +81,21 @@
     display: inline-block;
     background-color: white;
     padding: 10px 20px;
-    font-family: sans-serif, Arial;
-    font-size: 16px;
+
+    color: #219653;
     border: 2px solid #444;
     border-radius: 4px;
-    border-color: green;
+    border-color: #219653;
+    width: 50%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
 
 }
 
@@ -95,10 +115,10 @@
 .left-img2 {
   min-width: 40px;
   height: 40px;
-  border: 1px solid #333;
+  border: 1px solid white;
   margin-right: 10px;
   margin-left: 10px;
-  background: url(https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?auto=format&fit=crop&w=311&q=80);
+  background: url(/images/leaf.png);
   background-size: cover;
   float: right;
 
@@ -109,7 +129,7 @@
 
 
 .radio-toolbar3 {
-  margin: 10px;
+  margin: 1px;
 }
 
 .radio-toolbar3 input[type="radio"] {
@@ -122,11 +142,20 @@
     display: inline-block;
     background-color: white;
     padding: 10px 20px;
-    font-family: sans-serif, Arial;
-    font-size: 16px;
+    color: #333333;
     border: 2px solid #444;
     border-radius: 4px;
-    border-color: black;
+    border-color: #333333;
+    width: 50%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+    ]
 
 
 }
@@ -149,51 +178,12 @@
 .left-img3 {
   min-width: 40px;
   height: 40px;
-  border: 1px solid #333;
+  border: 1px solid white;
   margin-right: 10px;
   margin-left: 10px;
-  background: url(https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?auto=format&fit=crop&w=311&q=80);
+  background: url(/images/trash.png);
   background-size: cover;
   float: right;
 
+
 }
-
-
-
-
-
-
-
-
-</style>
-<body>
-
-<div class="radio-toolbar">
-    <input type="radio" id="radioApple" name="radioFruit" value="apple" checked>
-    <label for="radioApple">Recycling   <div class="left-img1"></div></label>
-    <br>
-    <br>
-</div>
-
-
-<div class="radio-toolbar2">
-    <input type="radio" id="radioBanana" name="radioFruit" value="banana">
-    <label for="radioBanana">Compost <div class="left-img2"></div></label>
-    <br>
-    <br>
-
-
-<div class="radio-toolbar3">
-
-    <input type="radio" id="radioOrange" name="radioFruit" value="orange">
-    <label for="radioOrange">  Trash <div class="left-img3"> </div></label>
-    <br>
-    <br>
-
-
-
-<p>&nbsp;</p>
-
-
-</body>
-</html>
