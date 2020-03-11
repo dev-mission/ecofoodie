@@ -4,3 +4,9 @@
 .mousepointer{
     cursor: pointer;
 }
+span h4 {
+    border: 2px solid #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}

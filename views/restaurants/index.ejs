@@ -6,7 +6,7 @@
 
 <a href="/restaurants/new/">Add New Restaurants </a><br>
 
-<% for(let record of records) { %>
+ <% for(let record of records) { %> 
 <span class="d-block p-2 bg-dark text-white">
  <div class="mousepointer">
   <h4><%= record.name %></h4>
@@ -21,67 +21,15 @@
         </br>
     </p>
   <ul><a href="/restaurants/<%= record.id %>">Edit </a></ul>
-</span> 
-<% } %>
+ </span>  
+ <% } %>
 
-<% for(let record of records) { %>
-<span class="d-block p-2 bg-dark text-white">
-  <h4><%= record.name %></h4>
-    <p><%= record.address %>
-        <br>
-          <h8>Rating:</h8>
-              <span class="fa fa-star checked"> </span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-        </br>
-     </p>
-</span>
-<% } %>
+ 
 
-<span class="d-block p-2 bg-dark text-white">
-  <h4>Chipotle Mexican Grill</h4>
-    <p>Address: 50 California St, San Francisco, CA 94111
-        <br>
-          <h8>Rating:</h8>
-             <span class="fa fa-star checked"> </span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star"></span>
-             <span class="fa fa-star"></span>
-        </br>
-    </p>
-</span>
 
-<span class="d-block p-2 bg-dark text-white">
-  <h4>Chipotle Mexican Grill</h4>
-    <p>Address: 121 4th #135, San Francisco, CA 94103
-         <br>
-           <h8>Rating:</h8>
-              <span class="fa fa-star checked"> </span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-        </br>
-    </p>
-</span>
 
-<span class="d-block p-2 bg-dark text-white">
-  <h4>Chipotle Mexican Grill</h4>
-    <p>Address: 1523 Sloat Blvd, San Francisco, CA 94132
-         <br>
-            <h8>Rating:</h8>
-               <span class="fa fa-star checked"> </span>
-           <span class="fa fa-star checked"></span>
-           <span class="fa fa-star checked"></span>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-        </br>
-     </p>
-   </div>
-</span>
+
+
 
 
     
