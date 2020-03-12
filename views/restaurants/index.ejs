@@ -5,23 +5,33 @@
 <center><h1>EcoFoodie </h1></center>
 
 <a href="/restaurants/new/">Add New Restaurants </a><br>
+<h5>EcoFoodie restaurants near me </h5>
 
- <% for(let record of records) { %> 
-<span class="d-block p-2 bg-dark text-white">
- <div class="mousepointer">
-  <h4><%= record.name %></h4>
-    <p><%= record.address %>
-        <br>
-           <h8>Rating:</h8>
-             <span class="fa fa-star checked"> </span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star checked"></span>
-             <span class="fa fa-star"></span>
-             <span class="fa fa-star"></span>
-        </br>
-    </p>
-  <ul><a href="/restaurants/<%= record.id %>">Edit </a></ul>
- </span>  
+
+
+<% for(let record of records) { %> 
+<div class= "box">
+    <span class="d-block p-2 bg-dark text-white">
+        <div class="mousepointer">
+            <img class="logo" src="images/chipotle_logo.jpg" alt="" align = "middle" hspace="15"><%= record.name %>
+        <div class = "address" align= "middle" hspace="-100%"><%= record.address %></div>
+ 
+<div class= "rating"> 
+   <br>
+     <h8>Rating:
+        <span class="fa fa-star checked"> </span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+    </h8>
+  </div>
+</div>
+<ul><a href="/restaurants/<%= record.id %>">Edit </a></ul>
+</div>
+
+ 
+  
  <% } %>
 
  
