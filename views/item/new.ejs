@@ -1,43 +1,35 @@
 <%- contentFor('title') %> EcoFoodie
+<%- contentFor('head') %>
+<script type="application/javascript" src="/scripts/uploader.js"></script>
 <%- contentFor('body') %>
 <h1>New Items</h1>
 
 <form method="post" action="/item">
-<div id="other" class="form-group" style="display: none;">
+  <div id="other" class="form-group" style="display: none;">
     <input type="text" class="form-control" name="other" value="" placeholder="Please describe...">
-    
   </div>
 
   <div class="form-group">
     <label>Restaurant</label>
     <textarea class="form-control" rows="2" name="restaurantId" ></textarea>
-    
   </div>
 
   <div class="form-group">
     <label>Picture</label>
-    <input type="file" class="form-control" name="photo" />
-    <input type="hidden" name="pictureUrl" value="">
+    <input type="file" class="form-control" data-name="photo" />
   </div>
 
   <div class="form-group">
     <label>Bin</label>
     <input type="textarea" class="form-control" name="bin" value="" />
-    
   </div>
 
   <div class="form-group">
     <label>Category</label>
     <input type="number" class="form-control" name="categoryId" value="" />
-    
   </div>
 
   <div class="form-group">
     <button class="btn btn-primary btn-block" type="submit">Submit</button>
   </div>
 </form>
-</div>
-</div>
-</div>
-</div>
-</div>

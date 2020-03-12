@@ -1,4 +1,14 @@
-<%- contentFor('title') %> Items
+<%- contentFor('title') %>Items
 <%- contentFor('body') %>
 <h1>Items</h1>
+<ul>
+  <% for (let record of records) { %>
+    <li>
+      <% if (record.photo) { %>
+      <img src="<%= assetUrl(record.photo) %>"><br />
+      <% } %>
+      <a href="/item/<%= record.id %>"><%= record.categoryId %>, <%= record.restaurantId %>, <%= record.bin %>, <%= record.photo %></a>
+    </li>
+  <% } %>
+</ul>
 <p><a href="/item/new">New Item</a></p>
