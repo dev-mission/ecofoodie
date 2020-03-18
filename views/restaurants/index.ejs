@@ -11,10 +11,27 @@
 
 <% for(let record of records) { %> 
 <div class= "box">
+
+
+
+will continue edit this part  
+  <!-- <div class="media">
+    <img src="..." class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0">Media heading</h5>
+      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    </div>
+  </div> -->
+
+
+
+
+
     <span class="d-block p-2 bg-dark text-white">
         <div class="mousepointer">
+        
             <img class="logo" src="images/chipotle_logo.jpg" alt="" align = "middle" hspace="15"><%= record.name %>
-        <div class = "address" align= "middle" hspace="-100%"><%= record.address %></div>
+        <div class = "address" align= "left" hspace="-100%"><%= record.address %></div>
  
 <div class= "rating"> 
    <br>
@@ -29,7 +46,6 @@
 </div>
 <ul><a href="/restaurants/<%= record.id %>">Edit </a></ul>
 </div>
-
  
   
  <% } %>
