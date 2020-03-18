@@ -1,16 +1,11 @@
 <%- contentFor('title') %> EcoFoodie
 <%- contentFor('head') %>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/itemNew.css">
 <script type="application/javascript" src="/scripts/uploader.js"></script>
 <%- contentFor('body') %>
-<link rel="stylesheet" type="text/css" href="itemNew.css">
 
-<head>
-<style>
-img {
-  width: 100%;
-}
-</style>
-</head>
+
 
 <img src="/images/greenArrow.png" alt="green arrow" style="width:128px;height:128px;">
 <img src="/images/EcoFoodieLOGO.png" alt="Eco Foodie Logo" style="width:128px;height:128px;">
@@ -21,20 +16,20 @@ img {
     <input type="text" class="form-control" name="other" value="" placeholder="Please describe...">
   </div>
 
-  <div class="form-group">
+<!--  <div class="form-group">
     <label>Restaurant</label>
     <textarea class="form-control" rows="2" name="restaurantId" ></textarea>
-  </div>
+  </div> -->
 
   <div class="form-group">
-    <label>Picture</label>
+    <h3>Picture</h3>
     <input type="file" class="form-control" data-name="photo" />
   </div>
 
 
-  <label>What is this photo about?</label>
+  <h2>What is this photo about?</h2>
   <br>
-  <label for="category">Choose a category:</label>
+
   <select id="category">
   <option value="Plastic">Plastic</option>
   <option value="LandFill">LandFill</option>
@@ -43,7 +38,9 @@ img {
   <br>
   <br>
 
-    <label>Bin</label>
+    <h1>Bin</h1>
+
+
     <br>
 
     <div class="radio-toolbar">
@@ -83,15 +80,20 @@ img {
 
 
 
-    <input type="textarea" class="form-control" name="bin" value="" />
+  <!-- <input type="textarea" class="form-control" name="bin" value="" />
   </div>
 
   <div class="form-group">
     <label>Category</label>
     <input type="number" class="form-control" name="categoryId" value="" />
-  </div>
+  </div> -->
+
+
+
+
+
 
   <div class="form-group">
-    <button class="btn btn-primary btn-block" type="submit">Submit</button>
+    <a href="#" class="button">Next</a>
   </div>
 </form>
