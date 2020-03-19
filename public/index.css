@@ -14,18 +14,17 @@ a{
     color: rgb(55, 216, 149);
 }
 h5{
-   
-  
     position: relative;
     right: 39.7%;
 }
+
 
 .check{
     color: orange;
 }
 .mousepointer{
     cursor: pointer;
-
+  
 }
 span h4 {
     border: 2px solid #c3c3c3;
