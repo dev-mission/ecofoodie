@@ -1,4 +1,4 @@
-h1{
+.restuarant_landing_title{
     background: dark gray;
     color: rgb(55, 216, 149);
     position: relative;
@@ -6,18 +6,17 @@ h1{
     right: -2px; 
 }
 
-a{
+.addrestaurants{
     position: relative;
     right: -88.9%;
     bottom: -25px;
     background: dark gray;
     color: rgb(55, 216, 149);
 }
-h5{
+.ecorestaurants_nearme{
     position: relative;
     right: 39.7%;
 }
-
 
 .check{
     color: orange;
@@ -26,18 +25,14 @@ h5{
     cursor: pointer;
   
 }
-span h4 {
+/* span h4 {
     border: 2px solid #c3c3c3;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-}
+} */
 
-img{
-    width: 5%;
-}
-
-.logo{
+.restaurants_logo{
     position: relative;
     width: 5%;
     margin-top: 1%;
@@ -50,7 +45,7 @@ img{
     text-align: justify;
     position: relative;
     bottom: -2px;
-    right: -101px;
+    right: -100px;
 }
 
 .boldtext{
@@ -65,17 +60,17 @@ img{
     width: 500px;
  }
 
- ul{
+ .edit_restaurants{
     margin-left: 4.2%;
-    top: -30px;   
+    top: -15px;   
     position: relative;
-    right: 10px;
-    width: 50px;
+    right: -39px;
+    width: -200px;
  }
 
  .box{
-    width: 100%;
-    padding-right: 15px;
+    width: 98%;
+    padding-right: 20px;
     padding-left: 15px;
     padding-bottom: 1px;
     background: #D0E3DA;
