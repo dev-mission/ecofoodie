@@ -1,13 +1,31 @@
 h1{
+    background: dark gray;
+    color: rgb(55, 216, 149);
+    position: relative;
+    bottom: -12px;
     right: -2px; 
 }
 
+a{
+    position: relative;
+    right: -88.9%;
+    bottom: -25px;
+    background: dark gray;
+    color: rgb(55, 216, 149);
+}
+h5{
+   
+  
+    position: relative;
+    right: 39.7%;
+}
 
 .check{
     color: orange;
 }
 .mousepointer{
     cursor: pointer;
+
 }
 span h4 {
     border: 2px solid #c3c3c3;
@@ -21,36 +39,39 @@ img{
 }
 
 .logo{
+    position: relative;
     width: 5%;
     margin-top: 1%;
+    top: -20px;   
     vertical-align: middle;
     margin-bottom: -80px;
 }
 
 .address{
-    margin-right: 66.5%;
-    bottom: 20px;
+    text-align: justify;
+    position: relative;
+    bottom: -2px;
+    right: -101px;
 }
 
  .rating{
-    margin-left: 7.1%;
-    top: -4px;
+    margin-left: 6.9%;
+    top: -20px;
     position: relative;
-    right: 20;
+    right: 35;
     width: 500px;
  }
 
  ul{
-    margin-left: 4.5%;
-    top: -1px;   
+    margin-left: 4.2%;
+    top: -30px;   
     position: relative;
-    right: 20;
+    right: 10px;
     width: 50px;
  }
 
  .box{
     width: 100%;
-   
     padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 1px;
