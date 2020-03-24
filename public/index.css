@@ -1,6 +1,6 @@
 .restuarant_landing_title{
     background: dark gray;
-    color: rgb(55, 216, 149);
+    color: #00BFA6;
     position: relative;
     bottom: -12px;
     right: -2px; 
@@ -11,11 +11,12 @@
     right: -88.9%;
     bottom: -25px;
     background: dark gray;
-    color: rgb(55, 216, 149);
+    color: #00BFA6;
 }
 .ecorestaurants_nearme{
     position: relative;
     right: 39.7%;
+    color: #00BFA6;
 }
 
 .check{
@@ -44,27 +45,18 @@
 .address{
     text-align: justify;
     position: relative;
-    bottom: -2px;
-    right: -100px;
+    right: -99px;
 }
 
 .boldtext{
     font-weight: 900;
 }
 
- .rating{
-    margin-left: 6.9%;
-    top: -20px;
-    position: relative;
-    right: 35;
-    width: 500px;
- }
-
  .edit_restaurants{
     margin-left: 4.2%;
-    top: -15px;   
+    top: -10px;   
     position: relative;
-    right: -39px;
+    right: -38px;
     width: -200px;
  }
 
@@ -78,4 +70,31 @@
     margin: 14px;
  }
 
- 
+.ratings{
+    position: relative; 
+    left: 6.8%;
+    display: flex;
+}
+
+.ratings input{
+     display: none;
+}
+
+.ratings label{
+    width: 20px;
+    background:#D0E3DA;
+}
+
+
+.ratings label:after{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    font-size: 16px;
+    color: #00BFA6;
+   
+    
+    
+    
+ }
+
