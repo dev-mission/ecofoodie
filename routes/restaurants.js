@@ -3,6 +3,7 @@
 const express = require('express');
 const router = express.Router();
 const models = require('../models');
+const helpers = require('./helpers');
 
 router.get('/', function(req, res, next) {
     models.Restaurant.findAll().then(function(records){ 
@@ -21,8 +22,6 @@ router.get('/', function(req, res, next) {
          res.render('restaurants/new');  
 
     });
-
-
 
     // Submitting for new restaurant
     router.post('/', function(req, res, next){
@@ -63,19 +62,20 @@ router.get('/', function(req, res, next) {
 
     router.post('/:id', function(req, res, next){
         models.Restaurant.findByPk(req.params.id).then(function(record){
-            record.update({
-                name: req.body.name,
-                address: req.body.address,
-                latitude: req.body.latitude,
-                longtitude: req.body.longtitude,
-                logo: req.body.logo,
-                rating: req.body.rating
-            }).then(function(record){
-                 res.redirect('/restaurants');
-
-                 })
-            })
-        });
+            helpers.handleUpload(record, 'logo', req.body.logo, 'restaurant/logo').then(function(record) {
+                record.update({
+                    name: req.body.name,
+                    address: req.body.address,
+                    latitude: req.body.latitude,
+                    longtitude: req.body.longtitude,
+                    logo: record.logo,
+                    rating: req.body.rating
+                }).then(function(record){
+                    res.redirect('/restaurants');
+                })
+            });
+         })
+    });
 
        
      
