@@ -4,6 +4,8 @@
 
 <form method="post" action="/restaurants/<%= record.id %>">
 
+    <label for="name">Logo</label></br>
+    <input type="file" id="logo"  name="logo" accept="image/record.logo%>"  required></br> 
     <label for="name">Name</label></br>
     <input type="text" id="name"  name="name" value ="<%= record.name%>"  required></br>
     <label for="address">Address</label></br>

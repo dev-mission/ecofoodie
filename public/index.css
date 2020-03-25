@@ -26,12 +26,6 @@
     cursor: pointer;
   
 }
-/* span h4 {
-    border: 2px solid #c3c3c3;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-} */
 
 .restaurants_logo{
     position: relative;
@@ -85,16 +79,11 @@
     background:#D0E3DA;
 }
 
-
 .ratings label:after{
     content: '\f005';
     font-family: fontAwesome;
     position: relative;
     font-size: 16px;
     color: #00BFA6;
-   
-    
-    
-    
  }
 
