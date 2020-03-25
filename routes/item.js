@@ -47,7 +47,7 @@ router.post('/:id', function(req, res, next) {
       }).then(function(record) {
         res.redirect('/item');
       })
-    });
+    })
   })
 });
 
