@@ -13,16 +13,29 @@
     <% if (locals.head) { %><%- head %><% } %>
   </head>
   <body>
-      <!-- Navigation -->
-  <nav class="navbar navbar-light bg-light static-top">
-    <div class="container">
-      <a class="navbar-brand" href="/"><img src="images/ecofoodie-logo.png" alt ="Eco Foodie Logo"></img> </a>
-      <div class = "signing-in-buttons"> 
-        <a class="btn btn-primary" href="#">Sign Up</a>
-        <a class="btn btn-primary" href="#">Sign In</a>
-      </div>
+
+  <div id='nav'>
+    <a class="navbar-brand" href="/"><img src="images/ecofoodie-logo.png" alt ="Eco Foodie Logo"></img> </a>
+    <div class="navbar-brand1">
+      <img src="images/people-dining.png" alt="People Dining"> </img>
     </div>
-  </nav>
+    <div class = "signing-in-buttons"> 
+      <a class="btn btn-primary" href="#">Sign Up</a>
+      <a class="btn btn-primary" href="#">Sign In</a>
+    </div>   
+    <div class = "navbar-hyperlinks">
+      <ul class="nav">
+          <li><a href="personaltraining.html">Home</a></li>
+          <li><a href="indexdesktop.html">About EcoFoodie</a></li>
+          <li><a href="apps.html">FAQ</a></li>
+          <li><a href="instagram.html">My Account</a></li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+  
+  </body>
     <% if (flash.info || flash.error) { %>
       <div style="position: absolute; top: 0; right: 0;">
         <% if (flash.info) { %>

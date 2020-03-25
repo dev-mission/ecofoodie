@@ -54,6 +54,7 @@
   
   body {
     margin: 0;
+    padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
@@ -4049,16 +4050,7 @@
       transition: none;
     }
   }
-  
-  .nav {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-  }
+
   
   .nav-link {
     display: block;
@@ -4143,8 +4135,48 @@
   .tab-content > .active {
     display: block;
   }
+
+
+  .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    float: right;
+    position: relative; 
+    list-style: none; /*gets rid of bullet points*/ 
+  }
+
+
+  .signing-in-buttons { 
+    float: right; 
+    display: inline-block;
+    padding-top: 3rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    padding-right: 50px; 
+  }
   
+
+  .navbar-hyperlinks { 
+    float: right;
+    display: inline-block;
+    padding-bottom: 0.3125rem;
+    margin-left: 6rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
   .navbar {
+    background-color: #D0E3DA;
+    float: right; 
+    margin-right: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -4156,7 +4188,33 @@
     justify-content: space-between;
     padding: 0.5rem 1rem;
   }
-  
+
+.clear {
+  clear: both;
+}
+
+#nav {
+    background-color: #D0E3DA;  /*turns nav bar white*/
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.nav > li {                                                             /*max-width: 768px*/
+    display:Inline-block;
+    padding: 10px 9px 10px 9px;                               /*nav bar text*/
+}
+
+ .nav > li a {                                               
+     text-decoration: none;
+     color: blue;
+     font-size: 14px;
+     padding: 5px 0px 5px 0px
+ }
+
+ .nav > li > a:hover {
+     color: black;*/
+ }
+
   .navbar > .container,
   .navbar > .container-fluid {
     display: -ms-flexbox;
@@ -4170,8 +4228,9 @@
   }
   
   .navbar-brand {
+    float: left; 
     display: inline-block;
-    padding-top: 0.3125rem;
+    padding-top: 3rem;
     padding-bottom: 0.3125rem;
     margin-right: 1rem;
     font-size: 1.25rem;
@@ -4180,6 +4239,19 @@
   }
   
   .navbar-brand:hover, .navbar-brand:focus {
+    text-decoration: none;
+  }
+
+  .navbar-brand1 {
+    float: left; 
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0rem;
+    margin-left: 15rem;
+    font-size: 1.25rem;
+  }
+  
+  .navbar-brand1:hover, .navbar-brand1:focus {
     text-decoration: none;
   }
   
@@ -6569,7 +6641,7 @@
   }
   
   .bg-light {
-    background-color: #f8f9fa !important;
+    background-color: #D0E3DA !important;
   }
   
   a.bg-light:hover, a.bg-light:focus,
@@ -10006,6 +10078,7 @@
       min-width: 992px !important;
     }
     .navbar {
+      
       display: none;
     }
     .badge {
