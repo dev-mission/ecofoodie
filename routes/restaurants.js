@@ -6,77 +6,72 @@ const models = require('../models');
 const helpers = require('./helpers');
 
 router.get('/', function(req, res, next) {
-    models.Restaurant.findAll().then(function(records){ 
+  const options = {};
+  if (req.query.search) {
+    options.where = {
+      name: {
+        [models.Sequelize.Op.iLike]: `%${req.query.search}%`
+      }
+    };
+  }
+  models.Restaurant.findAll(options).then(function(records){
     res.render('restaurants/index', {
-            records: records
-         });
-      });
+      records: records
     });
-
-    router.get('/restaurants', function(res,req,next){ 
-        res.render('restaurants/new')
-    })
-
-
-    router.get('/new', function(req, res, next){
-         res.render('restaurants/new');  
-
-    });
-
-    // Submitting for new restaurant
-    router.post('/', function(req, res, next){
-        models.Restaurant.create({
-            name: req.body.name,
-            address: req.body.address,
-            latitude: req.body.latitude,
-            longtitude: req.body.longtitude,
-            logo: req.body.logo,
-            rating: req.body.rating
-        }).then(function(record){
-        res.redirect(`/restaurants`);
-    });
+  });
 });
 
-    // Only for viewing a restaurant edit
-    router.get('/:id', function(req, res, next){
-       models.Restaurant.findByPk(req.params.id).then(function(record){
-           res.render('restaurants/edit',{
+router.get('/new', function(req, res, next){
+   res.render('restaurants/new');
+});
 
-              record : record
-           });    
-       });
+// Submitting for new restaurant
+router.post('/', function(req, res, next){
+  models.Restaurant.create({
+    name: req.body.name,
+    address: req.body.address,
+    latitude: req.body.latitude,
+    longtitude: req.body.longtitude,
+    logo: req.body.logo,
+    rating: req.body.rating
+  }).then(function(record){
+    res.redirect(`/restaurants`);
+  });
+});
+
+// Only for viewing a restaurant edit
+router.get('/:id', function(req, res, next){
+  models.Restaurant.findByPk(req.params.id).then(function(record){
+    res.render('restaurants/edit',{
+      record : record
     });
+  });
+});
 
-    // Only for viewing a restaurant and delete
-    router.delete('/:id', function(req, res, next){
-        Post.findByIdAndRemove(req.params.id, req.body).then(function(record){
-            res.render('restaurants/',{
- 
-               record : record
-            });    
-        });
-     });
- 
-     
-    
-
-    router.post('/:id', function(req, res, next){
-        models.Restaurant.findByPk(req.params.id).then(function(record){
-            helpers.handleUpload(record, 'logo', req.body.logo, 'restaurant/logo').then(function(record) {
-                record.update({
-                    name: req.body.name,
-                    address: req.body.address,
-                    latitude: req.body.latitude,
-                    longtitude: req.body.longtitude,
-                    logo: record.logo,
-                    rating: req.body.rating
-                }).then(function(record){
-                    res.redirect('/restaurants');
-                })
-            });
-         })
+// Only for viewing a restaurant and delete
+router.delete('/:id', function(req, res, next){
+  Post.findByIdAndRemove(req.params.id, req.body).then(function(record){
+    res.render('restaurants/',{
+      record : record
     });
+  });
+});
 
-       
-     
+router.post('/:id', function(req, res, next){
+  models.Restaurant.findByPk(req.params.id).then(function(record){
+    helpers.handleUpload(record, 'logo', req.body.logo, 'restaurant/logo').then(function(record) {
+      record.update({
+        name: req.body.name,
+        address: req.body.address,
+        latitude: req.body.latitude,
+        longtitude: req.body.longtitude,
+        logo: record.logo,
+        rating: req.body.rating
+      }).then(function(record){
+        res.redirect('/restaurants');
+      });
+    });
+  });
+});
+
 module.exports = router;
