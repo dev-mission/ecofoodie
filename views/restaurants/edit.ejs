@@ -1,11 +1,26 @@
 <%- contentFor('title') %>E
+<%- contentFor('head') %>
+<script type="application/javascript" src="/scripts/uploader.js"></script>
 <%- contentFor('body') %>
 
 
 <form method="post" action="/restaurants/<%= record.id %>">
 
-    <label for="name">Name</label></br>
-    <input type="text" id="name"  name="name" value ="<%= record.name%>"  required></br>
+ <!-- <script type> 
+      const logos = document.getElementById("logo");
+      logos.addEventListener("change", function(){
+        if (logos.value) {
+    customTxt.innerHTML = logos.value.match(
+      /[\/\\]([\w\d\s\.\-\(\)]+)$/
+    )[1];
+  } else {
+    customTxt.innerHTML = "No file chosen, yet.";
+  }
+});
+</script>  -->
+
+    <label for="name">Logo</label></br>
+    <input type="file" id="logo" accept="image/png, image/jpg" value ="<%= record.logo%>" data-name="logo" required></br>
     <label for="address">Address</label></br>
     <input type="text" id="address" name="address" value = "<%= record.address%>"required></br>
     <label for="longtitude">Longtitude</label></br>
@@ -14,13 +29,13 @@
     <input type="text" id="latitude" name="latitude" value = "<%= record.latitude%>" required></br>
     <label for="rating">Rating</label></br>
     <input type="text" id="rating" name="rating" value = "<%= record.rating%>" required></br>
-    
     <button type="submit">Submit</button>
     <button type="submit">Delete</button>
 </form>
 
 
 
+            
 
 
 
