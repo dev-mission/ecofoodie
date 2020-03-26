@@ -72,9 +72,9 @@
 
 .ratings{
     position: relative; 
-    left: 6.8%;
+    left: 0%;
     display: flex;
-    top: -5px;
+    top: 9px;
 
 }
 
