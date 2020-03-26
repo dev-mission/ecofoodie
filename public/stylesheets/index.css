@@ -1,0 +1,111 @@
+.restuarant_landing_title{
+    background: dark gray;
+    color: #00BFA6;
+    position: relative;
+    bottom: -12px;
+    right: -2px; 
+}
+
+.addrestaurants{
+    position: relative;
+    right: -88.9%;
+    bottom: -25px;
+    background: dark gray;
+    color: #00BFA6;
+}
+.ecorestaurants_nearme{
+    position: relative;
+    right: 39.7%;
+    color: #00BFA6;
+}
+
+.check{
+    color: orange;
+}
+.mousepointer{
+    cursor: pointer;
+  
+}
+/* span h4 {
+    border: 2px solid #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+} */
+
+.restaurants_logo{
+    position: relative;
+    width: 5%;
+    margin-top: 1%;
+    top: -20px;   
+    vertical-align: middle;
+    margin-bottom: -80px;
+}
+
+.address{
+    text-align: justify;
+    position: relative;
+    right: -99px;
+}
+
+.boldtext{
+    font-weight: 900;
+}
+
+ .edit_restaurants{
+    margin-left: 4.2%;
+    top: -10px;   
+    position: relative;
+    right: -38px;
+    width: -200px;
+ }
+
+ .box{
+    width: 98%;
+    padding-right: 20px;
+    padding-left: 15px;
+    padding-bottom: 1px;
+    background: #D0E3DA;
+    border-radius: 4px;
+    margin: 14px;
+ }
+
+.ratings{
+    position: relative; 
+    left: 6.8%;
+    display: flex;
+    top: -5px;
+
+}
+
+.ratings input{
+     display: none;
+}
+
+.ratings label{
+    width: 20px;
+    background:#D0E3DA;
+}
+
+.ratings label:before {
+    content:'\f005';
+    font-family: fontAwesome;
+    position:absolute;
+    display: block;
+    font-size: 16px;
+    color: #101010;
+    top: 1.5px;
+}
+.ratings label:hover:after,
+.ratings label:hover ~ label:after,
+.ratings input:checked ~ label:after
+{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    font-size: 16px;
+    color: #00BFA6;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+ }
+
