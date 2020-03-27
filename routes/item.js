@@ -14,8 +14,14 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/new', function(req, res, next) {
-  res.render('item/new');
+  models.Category.findAll().then(function(categories){
+    res.render('item/new',{
+      categories: categories
+    });
+  });
 });
+
+
 
 router.post('/', function(req, res, next) {
   models.Item.create({

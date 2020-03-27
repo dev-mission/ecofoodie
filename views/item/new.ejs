@@ -27,16 +27,24 @@
   </div>
 
 
+
+
+
+
   <h2>What is this photo about?</h2>
   <br>
 
   <select id="category">
-  <option value="Plastic">Plastic</option>
-  <option value="LandFill">LandFill</option>
-  <option value="Recycle">Recycle</option>
+  <% for (let Category of categories) { %>
+  <option value="<%=Category.id%>"><%= Category.type%></option>
+  <%} %>
   </select>
+  
   <br>
   <br>
+
+
+
 
     <h1>Bin</h1>
 
@@ -44,24 +52,24 @@
     <br>
 
     <div class="radio-toolbar">
-        <input type="radio" id="radioApple" name="radioFruit" value="apple" checked>
-        <label for="radioApple">Recycling   <div class="left-img1"></div></label>
+        <input type="radio" id="radio1" name=1 value="radio1" checked>
+        <label for="radio1">Recycling   <div class="left-img1"></div></label>
         <br>
         <br>
     </div>
 
 
     <div class="radio-toolbar2">
-        <input type="radio" id="radioBanana" name="radioFruit" value="banana">
-        <label for="radioBanana">Compost <div class="left-img2"></div></label>
+        <input type="radio" id="radio2" name=2 value="radio2">
+        <label for="radio2">Compost <div class="left-img2"></div></label>
         <br>
         <br>
 
 
     <div class="radio-toolbar3">
 
-        <input type="radio" id="radioOrange" name="radioFruit" value="orange">
-        <label for="radioOrange">  Trash <div class="left-img3"> </div></label>
+        <input type="radio" id="radio3" name=0 value="radio3">
+        <label for="radio3">  Trash <div class="left-img3"> </div></label>
         <br>
         <br>
 
@@ -77,23 +85,7 @@
 
 
 
-
-
-
-  <!-- <input type="textarea" class="form-control" name="bin" value="" />
-  </div>
-
   <div class="form-group">
-    <label>Category</label>
-    <input type="number" class="form-control" name="categoryId" value="" />
-  </div> -->
+    <button class="button" type="submit">Next</button>
 
-
-
-
-
-
-  <div class="form-group">
-    <a href="#" class="button">Next</a>
   </div>
-</form>
