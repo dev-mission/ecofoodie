@@ -5,8 +5,6 @@
 <script type="application/javascript" src="/scripts/uploader.js"></script>
 <%- contentFor('body') %>
 
-
-
 <img src="/images/greenArrow.png" alt="green arrow" style="width:128px;height:128px;">
 <img src="/images/EcoFoodieLOGO.png" alt="Eco Foodie Logo" style="width:128px;height:128px;">
 
@@ -16,76 +14,52 @@
     <input type="text" class="form-control" name="other" value="" placeholder="Please describe...">
   </div>
 
-<!--  <div class="form-group">
-    <label>Restaurant</label>
-    <textarea class="form-control" rows="2" name="restaurantId" ></textarea>
-  </div> -->
 
   <div class="form-group">
     <h3>Picture</h3>
-    <input type="file" class="form-control" data-name="photo" />
+     <input type="file" class="form-control" data-name="photo" />
   </div>
-
-
-
-
 
 
   <h2>What is this photo about?</h2>
   <br>
 
-  <select id="category">
-  <% for (let Category of categories) { %>
-  <option value="<%=Category.id%>"><%= Category.type%></option>
-  <%} %>
+  <select id="category" name="CategoryId">
+    <% for (let Category of categories) { %>
+       <option value="<%=Category.id%>"><%= Category.type%></option>
+    <%} %>
   </select>
-  
+
   <br>
   <br>
 
+  <h1>Bin</h1>
+  <br>
+  <div class="radio-toolbar">
+        <input type="radio" id="radio1" name="bin" value="1" checked>
+        <label for="radio1">Recycling <div class="left-img1"></div></label>
+  </div>
 
+  <br>
+  <br>
 
-
-    <h1>Bin</h1>
-
-
-    <br>
-
-    <div class="radio-toolbar">
-        <input type="radio" id="radio1" name=1 value="radio1" checked>
-        <label for="radio1">Recycling   <div class="left-img1"></div></label>
-        <br>
-        <br>
-    </div>
-
-
-    <div class="radio-toolbar2">
-        <input type="radio" id="radio2" name=2 value="radio2">
+  <div class="radio-toolbar2">
+        <input type="radio" id="radio2" name="bin" value="2">
         <label for="radio2">Compost <div class="left-img2"></div></label>
-        <br>
-        <br>
-
-
-    <div class="radio-toolbar3">
-
-        <input type="radio" id="radio3" name=0 value="radio3">
-        <label for="radio3">  Trash <div class="left-img3"> </div></label>
-        <br>
-        <br>
-
-
-
-    <p>&nbsp;</p>
-
-
-
-
+  </div>
+  <br>
   <br>
 
-
-
+  <div class="radio-toolbar3">
+    <input type="radio" id="radio3" name="bin" value="0">
+    <label for="radio3">  Trash <div class="left-img3"> </div></label>
+  </div>
+  <br>
+  <br>
+  <br>
 
   <div class="form-group">
     <button class="button" type="submit">Next</button>
 
   </div>
+</form>
