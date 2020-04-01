@@ -75,7 +75,6 @@
     left: 0%;
     display: flex;
     top: 9px;
-
 }
 
 .ratings input{
@@ -83,11 +82,11 @@
 }
 
 .ratings label{
-    width: 20px;
-    background:#D0E3DA;
+    width: 25px;
+    float:right;
 }
 
-.ratings label:before {
+.ratings label:before, value {
     content:'\f005';
     font-family: fontAwesome;
     position:absolute;
