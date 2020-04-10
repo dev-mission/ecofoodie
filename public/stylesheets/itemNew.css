@@ -1,0 +1,264 @@
+.radio-toolbar {
+  margin: 1px;
+}
+
+.radio-toolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-toolbar label {
+
+    background-color: white;
+    padding: 10px 20px;
+    color: #2F80ED;
+    border: 2px solid #2F80ED;
+    border-radius: 4px;
+    border-color: #2F80ED;
+    width: 50%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+
+
+
+
+
+
+}
+
+.radio-toolbar label:hover {
+  background-color: lightblue;
+}
+
+.radio-toolbar input[type="radio"]:focus + label {
+    border: 2px solid #444;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: lightblue;
+    border-color: blue;
+}
+
+
+.left-img1 {
+  min-width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  margin-right: 10px;
+  margin-left: 10px;
+  background: url(/images/recycle.png);
+  background-size: cover;
+  float: right;
+
+
+}
+
+
+
+
+
+.radio-toolbar2 {
+  margin: 1px;
+}
+
+.radio-toolbar2 input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+
+
+
+.radio-toolbar2 label {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 20px;
+
+    color: #219653;
+    border: 2px solid #444;
+    border-radius: 4px;
+    border-color: #219653;
+    width: 50%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+
+}
+
+.radio-toolbar2 label:hover {
+  background-color: lightgreen;
+}
+
+.radio-toolbar2 input[type="radio"]:focus + label {
+    border: 2px solid #444;
+}
+
+.radio-toolbar2 input[type="radio"]:checked + label {
+    background-color: lightgreen;
+    border-color: green;
+}
+
+.left-img2 {
+  min-width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  margin-right: 10px;
+  margin-left: 10px;
+  background: url(/images/leaf.png);
+  background-size: cover;
+  float: right;
+
+}
+
+
+
+
+
+.radio-toolbar3 {
+  margin: 1px;
+}
+
+.radio-toolbar3 input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-toolbar3 label {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 20px;
+    color: #333333;
+    border: 2px solid #444;
+    border-radius: 4px;
+    border-color: #333333;
+    width: 50%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+    ]
+
+
+}
+
+.radio-toolbar3 label:hover {
+  background-color: grey;
+}
+
+.radio-toolbar3 input[type="radio"]:focus + label {
+    border: 2px solid #444;
+}
+
+.radio-toolbar3 input[type="radio"]:checked + label {
+    background-color: grey;
+    border-color: black;
+}
+
+
+
+.left-img3 {
+  min-width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  margin-right: 10px;
+  margin-left: 10px;
+  background: url(/images/trash.png);
+  background-size: cover;
+  float: right;
+
+
+}
+
+
+h1 {color:#828282;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Roboto;
+    font-style: normal;
+   font-family: Roboto;
+
+
+  }
+
+h2 {color:#00BFA6;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Roboto;
+  font-style: normal;
+
+
+    }
+
+h3 {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #828282;
+}
+
+
+    .button {
+     cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    background-color: #00BFA6;
+    border-radius: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 8px;
+    text-align: center;
+      float: right;
+    }
+
+    .button:hover {
+  background-color: #00BFA6;
+  color: white;
+  text-decoration: none;
+}
+
+select {
+  margin: 50px;
+   width: 150px;
+   padding: 5px 35px 5px 5px;
+   border: 1px solid #F2F2F2;
+   box-sizing: border-box;
+   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+   height: 34px;
+  font-family: Roboto;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 14px;
+ color: #828282;
+ line-height: 16px;
+
+
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   background: url(/images/arrow.png) 96% / 15% no-repeat #EEE;
+}
