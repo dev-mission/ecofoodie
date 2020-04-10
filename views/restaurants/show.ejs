@@ -1,12 +1,9 @@
-<%- contentFor('title') %>EcoFoodie
+<%- contentFor('title') %><%= record.name %>
+<%- contentFor('head') %>
 <%- contentFor('body') %>
-
-<a class = "addrestaurants"href="/restaurants/new/" style="text-decoration: none;">Add New Restaurants </a><br>
-<h5 class="ecorestaurants_nearme" align="middle">EcoFoodie restaurants near me </h5>
-
-<% for(let record of records) { %>
-
-<a href="/restaurants/<%= record.id %>" class="box p-2">
+<div class= "box">
+  <div class="d-block p-2"></div>
+  <div class="mousepointer"></div>
   <img class="restaurants_logo" src="<%= assetUrl(record.logo) %>" alt="" align = "middle" hspace="12">
   <span class =" boldtext"><%= record.name %> </span>
   <div class = "address" align= "middle" hspace="-100%" ><%= record.address %></div>
@@ -24,6 +21,4 @@
       <input type="radio" name="<%= record.id %>-star" id="<%= record.id %>-star5" value="5" <%= record.rating==5 ? 'checked' : '' %>>
     </fieldset>
   </div>
-</a>
-
- <% } %>
+</div>

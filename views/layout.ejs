@@ -7,9 +7,9 @@
     <meta name="author" content="">
     <title><%= title %> - <%= process.env.APP_NAME %></title>
     <link rel="stylesheet" href="/libraries/bootstrap/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css"> 
+    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script type="application/javascript" src="/libraries/jquery/jquery.min.js"></script>
     <script type="application/javascript" src="/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -19,14 +19,14 @@
   <body>
 
   <div id='nav'>
-    <a class="navbar-brand" href="/"><img src="images/ecofoodie-logo.png" alt ="Eco Foodie Logo"></img> </a>
+    <a class="navbar-brand" href="/"><img src="/images/ecofoodie-logo.png" alt ="Eco Foodie Logo"></img> </a>
     <div class="navbar-brand1">
-      <img src="images/people-dining.png" alt="People Dining"> </img>
+      <img src="/images/people-dining.png" alt="People Dining"> </img>
     </div>
-    <div class = "signing-in-buttons"> 
+    <div class = "signing-in-buttons">
       <a class="btn btn-primary" href="#">Sign Up</a>
       <a class="btn btn-primary" href="#">Sign In</a>
-    </div>   
+    </div>
     <div class = "navbar-hyperlinks">
       <ul class="nav">
           <li><a href="personaltraining.html">Home</a></li>
@@ -38,7 +38,7 @@
     <div class="clear"></div>
   </div>
 
-  
+
   </body>
     <% if (flash.info || flash.error) { %>
       <div style="position: absolute; top: 0; right: 0;">

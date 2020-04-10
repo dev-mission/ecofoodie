@@ -40,9 +40,18 @@ router.post('/', function(req, res, next){
 });
 
 // Only for viewing a restaurant edit
-router.get('/:id', function(req, res, next){
+router.get('/:id/edit', function(req, res, next){
   models.Restaurant.findByPk(req.params.id).then(function(record){
     res.render('restaurants/edit',{
+      record : record
+    });
+  });
+});
+
+// Only for viewing a restaurant edit
+router.get('/:id', function(req, res, next){
+  models.Restaurant.findByPk(req.params.id).then(function(record){
+    res.render('restaurants/show',{
       record : record
     });
   });
