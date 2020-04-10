@@ -4,38 +4,51 @@
 <%- contentFor('body') %>
 
 
+<script>
+  const submit = document.querySelector('#submitt');
+  submit.onclick = function(){
+    const rbs = document.querySelectorAll('input[name="ratingg"]');
+      let selectedValue;
+      for (const rb of rbs){
+        if (rb.checked){
+          selectedValue = rb.value;
+          break;
+        }
+      }
+    alert(action);
+  }
+</script>
 <form method="post" action="/restaurants/<%= record.id %>">
 
- <!-- <script type> 
-      const logos = document.getElementById("logo");
-      logos.addEventListener("change", function(){
-        if (logos.value) {
-    customTxt.innerHTML = logos.value.match(
-      /[\/\\]([\w\d\s\.\-\(\)]+)$/
-    )[1];
-  } else {
-    customTxt.innerHTML = "No file chosen, yet.";
-  }
-});
-</script>  -->
 
     <label for="name">Logo</label></br>
-    <input type="file" id="logo" accept="image/png, image/jpg" value ="<%= record.logo%>" data-name="logo" required></br>
+    <input type="file" id="logo" accept="image/png, image/jpg" value="<%= record.logo%>" data-name="logo" required></br>
+    <label for="name">Name</label></br>
+    <input type="text" id="name" value ="<%= record.name%>" required></br>
     <label for="address">Address</label></br>
-    <input type="text" id="address" name="address" value = "<%= record.address%>"required></br>
+    <input type="text" id="address" name="address" value="<%= record.address%>"required></br>
     <label for="longtitude">Longtitude</label></br>
-    <input type="text" id="longtitude" name="longtitude" value = "<%= record.longtitude%>" required></br>
+    <input type="text" id="longtitude" name="longtitude" value="<%= record.longtitude%>" required></br>
     <label for="latitude">Latitude</label></br>
-    <input type="text" id="latitude" name="latitude" value = "<%= record.latitude%>" required></br>
+    <input type="text" id="latitude" name="latitude" value="<%= record.latitude%>" required></br>
     <label for="rating">Rating</label></br>
-    <input type="text" id="rating" name="rating" value = "<%= record.rating%>" required></br>
-    <button type="submit">Submit</button>
-    <button type="submit">Delete</button>
+    <input type="text"  id="rating" name="rating" value = "<%= record.rating%>" required></br>
+    <div class= "ratings">
+        <h8>Rating:
+          <input type="radio" name="ratingg" id="star1" value="<%= record.rating%>"><label for="star1"></label>
+          <input type="radio" name="ratingg" id="star2" value="<%= record.rating%>"><label for="star2" ></label>
+          <input type="radio" name="ratingg" id="star3" value="<%= record.rating%>"><label for="star3" ></label>
+          <input type="radio" name="ratingg" id="star4" value="<%= record.rating%>"><label for="star4" ></label>
+          <input type="radio" name="ratingg" id="star5" value="<%= record.rating%>"><label for="star5" ></label>
+       </h8>
+    </div><br>
+    <button type="submit" id="submitt">Submit</button>
+    <button type="delete">Delete</button>
 </form>
 
 
 
-            
+
 
 
 
@@ -66,6 +79,6 @@
     <input type="text" id="latitude" value = "<% record.latitude %>" name= "latitude" required></br>
     <label for="rating">Rating</label></br>
     <input type="text" id="rating" value = "<% record.rating %>" name="rating"></br>
-    
+
     <button type="submit">Submit</button>
 </form> -->
