@@ -27,15 +27,17 @@ router.get('/new', function(req, res, next){
 
 // Submitting for new restaurant
 router.post('/', function(req, res, next){
-  models.Restaurant.create({
+  const record = models.Restaurant.build({
     name: req.body.name,
     address: req.body.address,
     latitude: req.body.latitude,
     longtitude: req.body.longtitude,
-    logo: req.body.logo,
     rating: req.body.rating
-  }).then(function(record){
-    res.redirect(`/restaurants`);
+  });
+  helpers.handleUpload(record, 'logo', req.body.logo, 'restaurant/logo').then(function(record) {
+    record.save().then(function(record) {
+      res.redirect(`/restaurants/${record.id}`);
+    });
   });
 });
 
