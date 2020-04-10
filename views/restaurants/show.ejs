@@ -22,3 +22,9 @@
     </fieldset>
   </div>
 </div>
+<ul>
+  <% for (let category of categories) { %>
+  <li><a href="/restaurants/<%= record.id %>/categories/<%= category.id %>/items"><%= category.type %></a></li>
+  <% } %>
+</ul>
+<p><a href="/restaurants/<%= restaurant.id %>/items/new">New Item</a></p>

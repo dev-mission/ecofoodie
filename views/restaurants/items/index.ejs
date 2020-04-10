@@ -1,0 +1,14 @@
+<%- contentFor('title') %><%= restaurant.name %>
+<%- contentFor('head') %>
+<%- contentFor('body') %>
+<ul>
+  <% for (let item of items) { %>
+    <li>
+      <% if (item.photo) { %>
+      <img src="<%= assetUrl(item.photo) %>"><br />
+      <% } %>
+      goes into bin: <%= item.bin == 0 ? 'Trash' : (item.bin == 1 ? 'Recyling' : 'Compost') %>
+    </li>
+  <% } %>
+</ul>
+<p><a href="/restaurants/<%= restaurant.id %>/items/new?categoriesId=<%= category.id %>">New Item</a></p>

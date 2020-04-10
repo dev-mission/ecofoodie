@@ -1,0 +1,59 @@
+<%- contentFor('title') %><%= restaurant.name %>
+<%- contentFor('head') %>
+<link rel="stylesheet" type="text/css" href="/stylesheets/itemNew.css">
+<script type="application/javascript" src="/scripts/uploader.js"></script>
+<%- contentFor('body') %>
+<form method="post" action="/restaurants/<%= restaurant.id %>/items">
+  <div id="other" class="form-group" style="display: none;">
+    <input type="text" class="form-control" name="other" value="" placeholder="Please describe...">
+  </div>
+
+
+  <div class="form-group">
+    <h3>Picture</h3>
+     <input type="file" class="form-control" data-name="photo" />
+  </div>
+
+
+  <h2>What is this photo about?</h2>
+  <br>
+
+  <select id="category" name="CategoryId">
+    <% for (let Category of categories) { %>
+       <option value="<%=Category.id%>" <%= Category.id == categoryId ? 'selected' : ''%>><%= Category.type%></option>
+    <%} %>
+  </select>
+
+  <br>
+  <br>
+
+  <h1>Bin</h1>
+  <br>
+  <div class="radio-toolbar">
+        <input type="radio" id="radio1" name="bin" value="1" checked>
+        <label for="radio1">Recycling <div class="left-img1"></div></label>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="radio-toolbar2">
+        <input type="radio" id="radio2" name="bin" value="2">
+        <label for="radio2">Compost <div class="left-img2"></div></label>
+  </div>
+  <br>
+  <br>
+
+  <div class="radio-toolbar3">
+    <input type="radio" id="radio3" name="bin" value="0">
+    <label for="radio3">  Trash <div class="left-img3"> </div></label>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <div class="form-group">
+    <button class="button" type="submit">Next</button>
+
+  </div>
+</form>
