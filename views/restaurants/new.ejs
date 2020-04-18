@@ -2,24 +2,45 @@
 <%- contentFor('head') %>
 <script type="application/javascript" src="/scripts/uploader.js"></script>
 <%- contentFor('body') %>
-<h1>Add new Restaurant</h1>
-
 
 <form method="post" action="/restaurants">
 
 
-    <label for="name">Logo</label></br>
-    <input type="file" id="logo" accept="image/png, image/jpg" data-name="logo" required></br>
-    <label for="name">Name</label></br>
-    <input type="text" id="name" name="name" required></br>
-    <label for="address">Address</label></br>
+    <div class="boxing">
+    <div class="title_name">
+       <input style="width:250%" type="text" id="name" placeholder="Restaurant Name" name="name" required></br>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25242.91917842033!2d-122.38848000000002!3d37.73458285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1587175564317!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br>
+    <textarea class="textbox" name="message" placeholder="Write Eco Review"></textarea>
+    <div class="text">
+       <h6>Rating</h6>
+    </div>
+
+   <div class="ratings2">
+       <input type="radio" name="star" id="star1"><label for="star1"></label>
+       <input type="radio" name="star" id="star2"><label for="star2"></label>
+       <input type="radio" name="star" id="star3"><label for="star3"></label>
+       <input type="radio" name="star" id="star4"><label for="star4"></label>
+       <input type="radio" name="star" id="star5"><label for="star5"></label>
+   </div>
+        
+
+
+
+
+
+
+
+    <!-- <label for="address">Address</label></br>
     <input type="text" id="address" name="address" required></br>
     <label for="longtitude">Longtitude</label></br>
     <input type="text" id="longtitude" name="longtitude" required></br>
     <label for="latitude">Latitude</label></br>
     <input type="text" id="latitude" name="latitude" required></br>
-    <label for="rating">Rating</label></br>
-    <input type="text" id="rating" name="rating"></br>
+    <label for="name">Logo</label></br> 
+    <input type="file" id="logo" accept="image/png, image/jpg" data-name="logo" required></br> --> 
 
     <button type="submit">Submit</button>
 </form>
+</div>
+

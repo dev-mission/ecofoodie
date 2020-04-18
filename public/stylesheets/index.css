@@ -112,3 +112,122 @@
   font-size: 16px;
   transition: .5s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ratings2{
+  position: relative;
+  left: 806px;
+  display: flex;
+  top: -620px;
+  height: 30px;
+}
+
+.ratings2 input{
+  display: none;
+}
+
+.ratings2 label{
+  width: 60px;
+  /* float:right; */
+}
+
+.ratings2 label:before, value {
+  content:'\f005';
+  font-family: fontAwesome;
+  position:absolute;
+  display: block;
+  font-size: 50px;
+  color: #00BFA6;
+  top: 0;
+}
+/* .ratings label:hover:after, */
+/* .ratings label:hover ~ label:after, */
+.ratings2 input:checked ~ label:after
+{
+  content: '\f005';
+  font-family: fontAwesome;
+  position: absolute;
+  top: 0;
+  color: #101010;
+  font-size: 50px;
+  transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+.title_name{
+position: absolute;
+width: 239.6px;
+height: 22px;
+left: 15.5%;
+top: 377px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 16px;
+color: #828282;
+
+}
+
+iframe{
+margin: 152px;
+}
+
+.textbox{
+ /* margin-left: 151px;
+ margin-top: -150px; */
+position: absolute;
+width: 603px;
+height: 115px;
+left: 234px;
+top: 880px;
+}
+
+.text{
+position: absolute;
+width: 10%;
+height: 22px;
+left: 890px;
+top: 370px;
+
+/* Small Header */
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+/* Gray 3 */
+color: #828282;
+}
+
+.boxing{ 
+border-style: solid;
+margin: 80px;
+/* margin-right: 60%; */
+}
+
+
