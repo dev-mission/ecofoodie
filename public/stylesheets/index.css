@@ -231,3 +231,135 @@ margin: 80px;
 }
 
 
+/* Copied CSS Version*/
+.radiotoolbar {
+  margin: 1px;
+}
+
+.radiotoolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radiotoolbar label {
+    background-color: white;
+    padding: 10px 20px;
+    color: #2F80ED;
+    border: 2px solid #2F80ED;
+    border-radius: 4px;
+    border-color: #2F80ED;
+    width: 50%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+}
+
+.radiotoolbar label:hover {
+  background-color: lightblue;
+}
+
+.radiotoolbar input[type="radio"]:focus + label {
+    border: 2px solid #444;
+}
+
+.radiotoolbar input[type="radio"]:checked + label {
+    background-color: lightblue;
+    border-color: blue;
+}
+
+.radiotoolbar2 {
+  margin: 1px;
+}
+
+.radiotoolbar2 input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radiotoolbar2 label {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 20px;
+
+    color: #219653;
+    border: 2px solid #444;
+    border-radius: 4px;
+    border-color: #219653;
+    width: 50%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+
+}
+
+.radiotoolbar2 label:hover {
+  background-color: lightgreen;
+}
+
+.radiotoolbar2 input[type="radio"]:focus + label {
+    border: 2px solid #444;
+}
+
+.radiotoolbar2 input[type="radio"]:checked + label {
+    background-color: lightgreen;
+    border-color: green;
+}
+
+
+.radiotoolbar3 {
+  margin: 1px;
+}
+
+.radiotoolbar3 input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radiotoolbar3 label {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 20px;
+    color: #333333;
+    border: 2px solid #444;
+    border-radius: 4px;
+    border-color: #333333;
+    width: 50%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+}
+
+.radiotoolbar3 label:hover {
+  background-color: grey;
+}
+
+.radiotoolbar3 input[type="radio"]:focus + label {
+    border: 2px solid #444;
+}
+
+.radiotoolbar3 input[type="radio"]:checked + label {
+    background-color: grey;
+    border-color: black;
+}
+
+
+
