@@ -4,69 +4,50 @@
 <%- contentFor('body') %>
 
 <form method="post" action="/restaurants">
-
-
-    <div class="boxing">
-    <div class="title_name">
-       <input style="width:250%" type="text" id="name" placeholder="Restaurant Name" name="name" required></br>
-    </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25242.91917842033!2d-122.38848000000002!3d37.73458285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1587175564317!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br>
-    <textarea class="textbox" name="message" placeholder="Write Eco Review"></textarea>
-    <div class="text">
-       <h6>Rating</h6>
-    </div>
-
-   <div class="ratings2">
-       <input type="radio" name="star" id="star1"><label for="star1"></label>
-       <input type="radio" name="star" id="star2"><label for="star2"></label>
-       <input type="radio" name="star" id="star3"><label for="star3"></label>
-       <input type="radio" name="star" id="star4"><label for="star4"></label>
-       <input type="radio" name="star" id="star5"><label for="star5"></label>
-   </div>
-        
-
-   <img src="/images/greenArrow.png" alt="green arrow" style="width:128px;height:128px;">
-   <img src="/images/EcoFoodieLOGO.png" alt="Eco Foodie Logo" style="width:128px;height:128px;">
-
-
-   <form method="post" action="/item">
-    <div id="other" class="form-group" style="display: none;">
-      <input type="text" class="form-control" name="other" value="" placeholder="Please describe...">
-    </div>
-  
-    <div class="formgroup">
-      <h3>Upload Photo</h3>
-      <input type="file" class="form-control" data-name="photo" />
-    </div>
-    <h2>What is this photo about?</h2>
-    <br>
-    <h1>Bin</h1>
-    <br>
-    <div class="radiotoolbar">
-        <input type="radio" id="radio1" name="bin" value="1" checked>
-        <label for="radio1">Recycling <div class="left-img1"></div></label>
-    </div>
-    <br>
-    <br>
-    <div class="radiotoolbar2">
-        <input type="radio" id="radio2" name="bin" value="2">
-        <label for="radio2">Compost <div class="left-img2"></div></label>
-    </div>
-    <br>
-    <br>
-    <div class="radiotoolbar3">
-        <input type="radio" id="radio3" name="bin" value="0">
-        <label for="radio3">  Trash <div class="left-img3"> </div></label>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="formgroup">
-        <button class="button" type="submit">Next</button>
-    </div>
-  </form>
-
-
+  <div class ="margin">
+     <div class="boxing">
+         <div class="title_name">
+            <input style="width:250%" type="text" id="name" placeholder="Restaurant Name" name="name" required></br>
+         </div>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25242.91917842033!2d-122.38848000000002!3d37.73458285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1587175564317!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br>
+         <textarea class="textbox" name="message" placeholder="Write Eco Review"></textarea>
+         <div class="text">
+             <h6>Rating</h6>
+         </div>
+         <div class="ratings2">
+            <input type="radio" name="star" id="star1"><label for="star1"></label>
+            <input type="radio" name="star" id="star2"><label for="star2"></label>
+            <input type="radio" name="star" id="star3"><label for="star3"></label>
+            <input type="radio" name="star" id="star4"><label for="star4"></label>
+            <input type="radio" name="star" id="star5"><label for="star5"></label>
+         </div>
+         <div class= "upload-image">
+            <h1 style="color: #00BFA6;">Upload Image</h1>
+         </div>
+         <div class="radiotoolbar0">
+           <h2 style="color:black;">What is this photo about?</h2> 
+           <input type="radio" id="radio0" name="bin" value="0" checked>
+           <label for="radio0">Category <p><i class="down"></i></p></label>
+         </div>
+         <div class="radiotoolbar">
+           <h2 style="color:black;">What bin shoud this item go in?</h2> 
+           <input type="radio" id="radio1" name="bin" value="1" checked>
+           <label for="radio1">Recycling <div class="left-img1"></div></label>
+         </div>
+         <br>
+         <br>
+         <div class="radiotoolbar2">
+           <input type="radio" id="radio2" name="bin" value="2">
+           <label for="radio2">Compost <div class="left-img2"></div></label>
+         </div>
+         <br>
+         <br>
+         <div class="radiotoolbar3">
+           <input type="radio" id="radio3" name="bin" value="0">
+           <label for="radio3">  Trash <div class="left-img3"> </div></label>
+         </div> 
+         <br> 
+         </div>
 
     <!-- <label for="address">Address</label></br>
     <input type="text" id="address" name="address" required></br>
@@ -76,8 +57,9 @@
     <input type="text" id="latitude" name="latitude" required></br>
     <label for="name">Logo</label></br> 
     <input type="file" id="logo" accept="image/png, image/jpg" data-name="logo" required></br> --> 
-
-    <button type="submit">Submit</button>
+       <div class="formgroup1">
+         <button type="submit" id="search" value="Search">Submit</button>
+       </div>
 </form>
 </div>
 
