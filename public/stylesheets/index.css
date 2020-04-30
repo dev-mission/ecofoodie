@@ -75,6 +75,7 @@
   display: flex;
   top: 9px;
   height: 30px;
+  cursor: pointer;
 }
 
 .ratings input{
@@ -112,6 +113,7 @@
   display: flex;
   top: -620px;
   height: 30px;
+  cursor: pointer;
 }
 
 .ratings2 input{
@@ -120,6 +122,7 @@
 
 .ratings2 label{
   width: 60px;
+  cursor: pointer;
 }
 
 .ratings2 label:before, value {
@@ -225,6 +228,7 @@ background: #EBF3EF;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .radiotoolbar0 label:hover {
@@ -285,6 +289,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: space-between;  
+    cursor: pointer;
 }
 
 .radiotoolbar label:hover {
@@ -329,6 +334,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 
 }
 
@@ -375,6 +381,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .radiotoolbar3 label:hover {
@@ -407,9 +414,9 @@ i {
   border-radius: 3px;
   padding: 25px 12px;
   text-align: center;
- 
-  /* Subheader */
+  cursor: pointer;
   
+  /* Subheader */
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
